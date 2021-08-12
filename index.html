@@ -76,7 +76,7 @@
                             type: 'fill',
                             source: 'Nexus_fill',
                             'source-layer': 'wrl_polbnda_1m_ungis',
-			    //'filter': ['==', ['get', 'Nexus'], 'YES'], 
+			    filter: ['==', ['get', 'Nexus'], 'YES'], 
 			    layout: {},
                             paint: {
                                 'fill-color': "#D4E5F7",
@@ -102,7 +102,7 @@
 	map.on('click', 'Nexus_fill', (e) => {
 	new mapboxgl.Popup()
 	.setLngLat(e.lngLat)
-	.setHTML(e.features[0].properties.Terr_name)
+	.setHTML(e.features[0].properties.CName)
 	.addTo(map);
 	});
 		
