@@ -47,7 +47,8 @@
 
 
         map.on('load', function () {
-            const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR3LS3FpD0_15HEjqN8b1nJMmdV25Uh5uKcnHWQD1Jk_fEkpD3WSGZCIyUzZObCS7So7riM_2UKV5m8/pub?gid=0&single=true&output=csv';
+            // Loads data from the Google spreadsheet
+	    const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR3LS3FpD0_15HEjqN8b1nJMmdV25Uh5uKcnHWQD1Jk_fEkpD3WSGZCIyUzZObCS7So7riM_2UKV5m8/pub?gid=0&single=true&output=csv';
             Papa.parse(csvUrl, {
                 download: true,
                 header: true,
